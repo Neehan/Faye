@@ -2,7 +2,7 @@ Faye
 ======
 Faye is a program to perform swift graph querying in large biologocal network databases. See the `doc` for details.
 
-*Note: The project is ongoing early stages of development.*
+*Note: The original code is in Dr. Hayes's private Bitbucket repo. Here I have kept only my contributions.*
 
 Build instructions
 -------------------
