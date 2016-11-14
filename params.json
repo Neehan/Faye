@@ -1,0 +1,6 @@
+{
+  "name": "Faye",
+  "tagline": "Fast querying in large biological network databases in presence of noise",
+  "body": "Faye\r\n======\r\nFaye is a program to perform swift graph querying in large biologocal network databases. See the `doc` for details.\r\n\r\n*Note: The original code is in Dr. Hayes's private Bitbucket repo. Here I have kept only my contributions.*\r\n\r\nBuild instructions\r\n-------------------\r\nJust run the `Makefile`.\r\n\r\nLicense\r\n--------\r\nYou can use, modify and distribute the source code under the terms of GPL version 3. (or any later version in your opinion) See the `LICENSE` for details.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
