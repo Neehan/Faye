@@ -126,10 +126,12 @@ Graphette* Graph::sampleGraphette(uint k, uint samplingRadius){
 	else{
 		set<uint> nbors;
 		vector<uint>nborsvec;
+		vector<bool> visited(numNodes_, false);
 		while(nbors.size() < k){
 			//Select a random node
-			uint node = xrand(0, numNodes_);
-			vector<bool> visited(numNodes_, false);
+		      do{	
+			  uint node = xrand(0, numNodes_);
+		        }while(visited[node]);
 			auto temp = this->explore(node, samplingRadius, visited);
 			nbors.insert(temp.begin(), temp.end());
 		}
@@ -150,7 +152,10 @@ set<uint> Graph::explore(uint seed, uint radius, vector<bool>& visited){
 		if(seed == i) continue;
 		if(this->hasEdge(seed, i)){
 			if(radius == 1) 
-				nbors.insert(i);
+			   {	
+			      nbors.insert(i);
+			      visited[i] = true;
+			   }	
 			else if(radius > 1 and visited[i] == false){
 				auto temp = this->explore(i, radius-1, visited);
 				nbors.insert(temp.begin(), temp.end());
